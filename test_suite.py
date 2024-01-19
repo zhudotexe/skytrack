@@ -1,7 +1,7 @@
-from modules.jet_photos import get_jetphotos_data
-from modules.flight_aware import get_flightaware_data, get_airport_code, get_airport_name
-from modules.airport_info import get_airport_info
-from modules.metar import get_metar_data
+from skytrack.jet_photos import get_jetphotos_data
+from skytrack.flight_aware import get_flightaware_data, get_airport_code, get_airport_name
+from skytrack.airport_info import get_airport_info
+from skytrack.metar import get_metar_data
 
 print(get_jetphotos_data("N450FE"))
 flight_aware_data = get_flightaware_data("N137RJ")

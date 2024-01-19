@@ -1,9 +1,9 @@
-from modules import *
+from skytrack import *
 from time import sleep
-from modules.rerun import rerun
+from skytrack.rerun import rerun
 from rich.console import Console
-from modules.banner import *
-from modules.option import *
+from skytrack.banner import *
+from skytrack.option import *
 import os
 
 console = Console()
@@ -27,19 +27,19 @@ try:
             return
 
         if option == 1:
-            import modules.osint_menu
+            import skytrack.osint_menu
             rerun()
 
         if option == 2:
-            import modules.pdf_menu
+            import skytrack.pdf_menu
             rerun()
 
         if option == 3:
-            import modules.icao_tail_menu
+            import skytrack.icao_tail_menu
             rerun()
 
         if option == 4:
-            import modules.about
+            import skytrack.about
             rerun()
 
         if option == 5:

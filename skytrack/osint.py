@@ -1,13 +1,13 @@
-from modules.opensky import get_opensky_data
-from modules.wikipedia import get_wikipedia_data
-from modules.jet_photos import get_jetphotos_data
-from modules.flight_aware import get_flightaware_data, get_airport_code, get_airport_name
-from modules.aviation_safety import get_aviation_safety_data
-from modules.airport_info import get_airport_info
-from modules.metar import get_metar_data
-from modules.models.aircraft import Aircraft
+from skytrack.opensky import get_opensky_data
+from skytrack.wikipedia import get_wikipedia_data
+from skytrack.jet_photos import get_jetphotos_data
+from skytrack.flight_aware import get_flightaware_data, get_airport_code, get_airport_name
+from skytrack.aviation_safety import get_aviation_safety_data
+from skytrack.airport_info import get_airport_info
+from skytrack.metar import get_metar_data
+from skytrack.models.aircraft import Aircraft
 from rich.console import Console
-from modules.icao_tail import icao_to_tail, tail_to_icao
+from skytrack.icao_tail import icao_to_tail, tail_to_icao
 
 import jinja2
 import pandas as pd

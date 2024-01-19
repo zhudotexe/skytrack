@@ -1,8 +1,8 @@
 import os
 import requests
 import csv
-from modules.file_formatter import format_file_name
-from modules.models.airport import Airport
+from skytrack.file_formatter import format_file_name
+from skytrack.models.airport import Airport
 
 '''
 Information Derived from Airport Codes

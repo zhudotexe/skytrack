@@ -1,32 +1,31 @@
 from time import sleep
-from modules.icao_tail import *
-from modules.osint import *
-from modules.option import generate_option
+from skytrack.icao_tail import *
+from skytrack.option import generate_option
 from rich.console import Console
-from modules.menu import rerun
+from skytrack.menu import rerun
 import os
 
 console = Console()
 
 try: 
-    def osint_options_menu():
-        osint_options_menu.options = [
-            "🛫  Input Tail Number",
-            "🛬  Input ICAO Designator",
+    def run_icao_tail():
+        options = [
+            "🛫  Convert Tail Number to ICAO Designator",
+            "🛬  Convert ICAO Designator to Tail Number",
             "Back to Main Menu"
         ]
-        
-        option = generate_option(osint_options_menu.options)
+
+        option = generate_option(options)
 
         if option == 1:
             value = console.input("Enter [bold blue]Tail Number[/]: ")
-            osint_from_tail(value)
-
+            print_tail_to_icao(value)
+            
         if option == 2:
             value = console.input("Enter [bold blue]ICAO Designation[/]: ")
-            osint_from_icao(value)
+            print_icao_to_tail(value)
         
-    osint_options_menu()
+    run_icao_tail()
 
 except KeyboardInterrupt:
     print("\n")
@@ -34,5 +33,5 @@ except KeyboardInterrupt:
     sleep(1)
 
 except TypeError:
-    #os.system("clear")
+    os.system("clear")
     rerun()

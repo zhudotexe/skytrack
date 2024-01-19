@@ -4,9 +4,9 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import time
 import re
-from modules.models.flight_registration import FlightRegistration
-from modules.models.flight_history import FlightHistory
-from modules.models.flight_telemetry import FlightTelemetry
+from skytrack.models.flight_registration import FlightRegistration
+from skytrack.models.flight_history import FlightHistory
+from skytrack.models.flight_telemetry import FlightTelemetry
 import dateparser
 import datetime as DT
 

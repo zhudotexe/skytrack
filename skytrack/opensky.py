@@ -1,7 +1,7 @@
 import os
 import requests
 import csv
-from modules.file_formatter import format_file_name
+from skytrack.file_formatter import format_file_name
 
 """
 Information Derived from Open Sky 

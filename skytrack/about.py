@@ -1,7 +1,7 @@
 from time import sleep
-from modules.option import generate_option
+from skytrack.option import generate_option
 from rich.console import Console
-from modules.menu import rerun
+from skytrack.menu import rerun
 
 try: 
     def about_options_menu():
